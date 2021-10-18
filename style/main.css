@@ -1,0 +1,223 @@
+:root{
+	--main-color: #000;
+	/*Ссылки*/
+	--a-color: #d4c9c1;
+	/*Рамки*/
+	/*--border-color: #e8e3df;*/
+	--border-color: #bfafa3;
+}
+*,
+*:before,
+*after{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html{
+	scroll-behavior: smooth;
+}
+body{
+	background-color: var(--main-color);
+	font-weight: lighter;
+	color: #fff;
+
+	/*font-family: Palatino Linotype, Book Antiqua, Palatino;*/
+	font-family: Times New Roman;
+	letter-spacing: 1px;
+	font-size: 20px;
+	max-width: 99.5%;
+}
+h1{
+	font-weight: lighter;
+	letter-spacing: 5px;
+	font-size: 60px; 
+	font-family: "OldStandardTT-Regular";
+}	
+h2{
+	font-weight: lighter;
+	letter-spacing: 5px;
+	font-size: 34px;
+	font-family: "OldStandardTT-Regular";
+}
+h3{
+	font-size: 26px;
+}
+a{
+	text-decoration: none;
+	list-style-type: none;
+	color: #fff;
+	transition: 0.5s;
+}
+.menu a:hover{
+	color: var(--a-color);
+}
+.all{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.logo{
+	display: flex;
+	justify-content: center;
+	margin: 60px;
+}
+.logo_item{
+	text-align: center;
+}
+.menu{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+.heading{
+	display: flex;
+	justify-content: center;
+}
+.main_block{
+	display: flex;
+	/*max-width: 2000px;*/
+	justify-content: space-between;
+	margin-bottom: 60px;
+	margin-top: 60px;
+}
+.servises{
+	/*justify-content: center;*/
+		justify-content: space-around;
+}
+.servise_block{
+	display: flex;
+	flex-direction: column;
+	min-width: 688px;
+}
+.servise_item{
+	border: solid;
+	border-color: var(--border-color);
+	display: flex;
+	flex-direction: column;
+	min-height: 520px;
+	margin: 40px;
+}
+.servise_item_part{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.servise_button{
+	margin-top: 180px;
+	margin-bottom: 200px;
+	margin-left: 150px;
+	margin-right: 150px;
+	padding-left: 40px;
+	padding-right: 40px;
+	text-align: center;
+	border: solid;
+	border-color: var(--border-color);
+	transition: 0.5s;
+}
+.servise_button:hover{
+	background-color: var(--border-color);
+}
+.name, .cost{
+	text-align: center;
+	font-size: 26px;
+}
+.cost{
+	color: var(--a-color);
+	font-family: "OldStandardTT-Regular";
+}
+.info{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	float: center;
+}
+.info_item{
+	text-align: left;
+}
+.portfolio{
+	display: flex;
+	flex-direction: column;
+}
+.portfolio_block{
+	display: flex;
+}
+.portfolio_item{
+	text-align: center;
+	border-width: 1px;
+	border: solid;
+	border-color: var(--border-color);
+	margin: 40px;
+	padding: 60px;
+}
+.certificate{
+	display: flex;
+	flex-direction: column;
+}
+.number{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+/*.number_item{
+	margin: 80px;
+	text-align: center;
+	transition: 0.5s;
+}
+.number_item:hover{
+	background-color: var(--border-color);
+}*/
+
+/*.number_block{
+	display: flex;
+}
+.number_item{
+	margin: 80px;
+	padding: 80px;
+}*/
+.number_block a:hover{
+	color: var(--a-color);
+}
+.number_block{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	margin-top: 40px;
+	margin-bottom: 80px;
+	margin-left: 150px;
+	margin-right: 150px;
+	font-size: 26px;
+}
+
+@media only screen and (max-width: 1320px) {
+	[class*="col-"] {
+		width: 100%;
+	}
+	.main_block, .portfolio_block{
+		flex-direction: column;
+	}
+	h1{
+		font-size: 56px;
+	}
+	h2{
+		font-size: 30px;
+	}
+	h3{
+		font-size: 22px;
+	}
+}
+
+@font-face {
+	/*название шрифта(чтобы не запутаться лучше указать название папки со шрифтом) */
+	font-family: "Lobster-Regular"; 
+	font-family: "Ephesis-Regular"; 
+	font-family: "CormorantInfant-Bold"; 
+	font-family: "PlayfairDisplay-SemiBold"; 
+	font-family: "OldStandardTT-Regular"; 
+	/*адрес шрифта и тип */
+	src: url("../fonts/Lobster-Regular.ttf") format("truetype");
+	src: url("../fonts/Ephesis-Regular.ttf") format("truetype");
+	src: url("../fonts/CormorantInfant-Bold.ttf") format("truetype");
+	src: url("../fonts/PlayfairDisplay-SemiBold.ttf") format("truetype");
+	src: url("../fonts/OldStandardTT-Regular.ttf") format("truetype");
+} 
