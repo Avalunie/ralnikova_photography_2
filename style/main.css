@@ -75,13 +75,11 @@ a{
 }
 .main_block{
 	display: flex;
-	/*max-width: 2000px;*/
 	justify-content: space-between;
 	margin-bottom: 60px;
 	margin-top: 60px;
 }
 .servises{
-	/*justify-content: center;*/
 		justify-content: space-around;
 }
 .servise_block{
@@ -204,6 +202,36 @@ a{
 	}
 	h3{
 		font-size: 22px;
+	}
+}
+
+@media only screen and (max-width: 950px) {
+	[class*="col-"] {
+		width: 100%;
+	}
+	.main_block, .portfolio_block{
+		flex-direction: column;
+	}
+	body{
+		font-size: 18px;
+	}
+	h1{
+		font-size: 36px;
+	}
+	h2{
+		font-size: 26px;
+	}
+	h3{
+		font-size: 18px;
+	}
+	.servise_block{
+		max-width: 500px;
+		min-width: 0px;
+	}
+	.servise_button{
+		margin-bottom: 0px;
+		margin-left: 0px;
+		margin-right: 0px;
 	}
 }
 
