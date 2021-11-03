@@ -17,6 +17,7 @@ html{
 	scroll-behavior: smooth;
 }
 body{
+	overflow-x: hidden; 
 	background-color: var(--main-color);
 	font-weight: lighter;
 	color: #fff;
@@ -47,6 +48,10 @@ a{
 	list-style-type: none;
 	color: #fff;
 	transition: 0.5s;
+}
+img{
+	height: 600px;
+	width: auto;
 }
 .menu a:hover{
 	color: var(--a-color);
@@ -80,7 +85,7 @@ a{
 	margin-top: 60px;
 }
 .servises{
-		justify-content: space-around;
+	justify-content: space-around;
 }
 .servise_block{
 	display: flex;
@@ -132,6 +137,9 @@ a{
 }
 .info_item{
 	text-align: left;
+	margin-left: 70px;
+	margin-right: 70px;
+	margin-top: 40px;
 }
 .portfolio{
 	display: flex;
@@ -139,8 +147,43 @@ a{
 }
 .portfolio_block{
 	display: flex;
+	flex-direction: column;
 }
 .portfolio_item{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 40px;
+	margin-bottom: 80px;
+
+	font-weight: lighter;
+	letter-spacing: 20px;
+	font-size: 30px;
+	font-family: "OldStandardTT-Regular";
+}
+.right_photo{
+	/*padding-right: 700px;*/
+    position: relative;
+   	right: -480px; 
+    padding: 15px; 
+
+	transition: 0.5s;
+}
+.right_photo:hover{
+	right: -240px;
+}
+.left_photo{
+	/*padding-left: 700px;*/
+    position: relative;
+   	left: -480px; 
+    padding: 15px; 
+
+	transition: 0.5s;
+}
+.left_photo:hover{
+	left: -240px;
+}
+.portfolio_photo{
 	text-align: center;
 	border-width: 1px;
 	border: solid;
@@ -148,9 +191,18 @@ a{
 	margin: 40px;
 	padding: 60px;
 }
+.portfolio_text{
+	margin: 80px;
+	text-align: center;
+}
 .certificate{
 	display: flex;
 	flex-direction: column;
+}
+.certificate_block{
+	margin-left: 700px;
+	margin-right: 700px;
+	margin-top: 40px;
 }
 .number{
 	display: flex;
@@ -203,6 +255,30 @@ a{
 	h3{
 		font-size: 22px;
 	}
+	.portfolio_item{
+		letter-spacing: 5px;
+		font-size: 24px;
+	}
+	.right_photo{
+	    position: relative;
+	   	right: -200px; 
+	    padding: 15px; 
+
+		transition: 0.5s;
+	}
+	.right_photo:hover{
+		right: -100px;
+	}
+	.left_photo{
+	    position: relative;
+	   	left: -200px; 
+	    padding: 15px; 
+
+		transition: 0.5s;
+	}
+	.left_photo:hover{
+		left: -100px;
+	}
 }
 
 @media only screen and (max-width: 950px) {
@@ -224,6 +300,10 @@ a{
 	h3{
 		font-size: 16px;
 	}
+	img{
+		width: 70%;
+		height: auto;
+	}
 	.servise_block{
 		max-width: 500px;
 		min-width: 0px;
@@ -240,6 +320,30 @@ a{
 	}
 	.menu_item{
 		margin: 5px;
+	}
+	.portfolio_item{
+		letter-spacing: 5px;
+		font-size: 24px;
+	}
+	.right_photo{
+	    position: relative;
+	   	right: -150px; 
+	    padding: 15px; 
+
+		transition: 0.5s;
+	}
+	.right_photo:hover{
+		right: -80px;
+	}
+	.left_photo{
+	    position: relative;
+	   	left: -150px; 
+	    padding: 15px; 
+
+		transition: 0.5s;
+	}
+	.left_photo:hover{
+		left: -80px;
 	}
 }
 
