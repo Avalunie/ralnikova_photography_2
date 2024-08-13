@@ -117,11 +117,12 @@ img{
 	padding-right: 40px;
 	text-align: center;
 	border: solid;
+	background-color: var(--border-color);
 	border-color: var(--border-color);
 	transition: 0.5s;
 }
 .servise_button:hover{
-	background-color: var(--border-color);
+	background-color: #000000;
 }
 .name, .cost{
 	text-align: center;
@@ -208,11 +209,6 @@ img{
 
 	text-align: center;
 }
-/*.certificate_block{
-	margin-left: 700px;
-	margin-right: 700px;
-	margin-top: 40px;
-}*/
 .number{
 	display: flex;
 	flex-direction: column;
