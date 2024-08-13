@@ -84,8 +84,6 @@ img{
 	text-align: center;
 }
 .main_block{
-	display: flex;
-	justify-content: space-between;
 	margin-bottom: 60px;
 	margin-top: 60px;
 }
@@ -94,7 +92,6 @@ img{
 }
 .servise_block{
 	display: flex;
-	flex-direction: column;
 	min-width: 688px;
 }
 .servise_item{
